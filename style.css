@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set a clean and readable font */
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Light background color for the body */
+}
+
+/* Styling for the header section */
+.header {
+    background-color: #222; /* Slightly lighter black */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center-align all text in the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.header h1, .header h4, .header p {
+    color: #fff;
+    margin: 10px 0;
+    line-height: 1.5; /* Improve line height for readability */
+}
+
+.header img {
+    display: block;
+    margin: 20px auto;
+    width: 150px; /* Set the width for the image */
+    height: 150px; /* Set the height to match the width for a perfect circle */
+    border-radius: 25%; /* Keep the border-radius at 50% to maintain a perfect circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Retain the shadow for a polished look */
+    object-fit: contain; /* Ensure the whole image fits within the circle */
+    background-color: white; /* Optional: add a background color to fill any empty space */
+}
+/* Centered content styling */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.centered-content h1 {
+    font-size: 2em; /* Increase font size for main heading */
+    margin: 10px 0;
+}
+
+.centered-content h4, .centered-content p {
+    margin: 5px 0;
+    color: #555; /* Lighter color for subheadings and paragraphs */
+}
+
+/* Styling for the event location section */
+.event-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px; /* Add padding to the section */
+    background-color: #fff; /* White background to separate sections */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.event-location h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.75em; /* Adjust font size for better hierarchy */
+}
+
+.event-location p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #666; /* Use a lighter shade for paragraphs */
+}
+
+
+.location-content {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between the image and map */
+    margin-top: 20px; /* Add some space above the content */
+    gap: 20px; /* Add space between the image and the map */
+}
+
+.location-content img, 
+.location-content iframe {
+    width: 48%; /* Increase the width of both the image and map */
+    height: 350px; /* Increase the height to match the larger width */
+    border-radius: 8px; /* Keep the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.location-content iframe {
+    border: none; /* Remove the default border */
+}
+/* Page layout styling */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px; /* Add padding around the content */
+}
+
+.page section {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px; /* Add padding to sections */
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .header img {
+        max-width: 100px; /* Smaller image for mobile */
+    }
+    
+    .centered-content h1 {
+        font-size: 1.5em; /* Smaller heading for mobile */
+    }
+    
+    .event-location h2 {
+        font-size: 1.5em; /* Adjust for mobile screens */
+    }
+    
+    .page section {
+        margin: 10px 0; /* Reduce margin for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

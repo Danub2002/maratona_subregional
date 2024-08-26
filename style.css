@@ -1,55 +1,74 @@
-html, body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Set a clean and readable font */
-    color: #333; /* Default text color */
-    background-color: #f4f4f4; /* Light background color for the body */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Styling for the header section */
-.header {
-    background-color: #222; /* Slightly lighter black */
-    padding: 20px;
+section#header {
+    width: 500px;
+    background-color: black; /* Slightly lighter black */
     width: 100%;
-    box-sizing: border-box;
     text-align: center; /* Center-align all text in the header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header h1, .header h4, .header p {
+section div.header {
+    width: 60%;
+}
+
+.header .logos {
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+}
+
+section {
+    padding: 60px;
+}
+
+section div {
+    width: 60%;
+}
+
+.header h1 {
+    color: #FFF212;
+    font-size: 46px;
+    text-align: left;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    gap: 20px;
+}
+
+.centered-content div {
+    width: 100%;
+}
+
+.centered-content h4 {
     color: #fff;
-    margin: 10px 0;
+    margin: 5px 0;
     line-height: 1.5; /* Improve line height for readability */
+    font-size: 30px;
+}
+
+.centered-content p {
+    color: #fff;
+    margin: 5px 0;
+    line-height: 1.5; /* Improve line height for readability */
+    font-size: 20px;
 }
 
 .header img {
     display: block;
-    margin: 20px auto;
-    width: 150px; /* Set the width for the image */
-    height: 150px; /* Set the height to match the width for a perfect circle */
-    border-radius: 25%; /* Keep the border-radius at 50% to maintain a perfect circle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Retain the shadow for a polished look */
-    object-fit: contain; /* Ensure the whole image fits within the circle */
-    background-color: white; /* Optional: add a background color to fill any empty space */
-}
-/* Centered content styling */
-.centered-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px; /* Add padding for spacing */
-}
-
-.centered-content h1 {
-    font-size: 2em; /* Increase font size for main heading */
-    margin: 10px 0;
-}
-
-.centered-content h4, .centered-content p {
-    margin: 5px 0;
-    color: #555; /* Lighter color for subheadings and paragraphs */
 }
 
 /* Styling for the event location section */
@@ -62,7 +81,6 @@ html, body {
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 20px; /* Add padding to the section */
     background-color: #fff; /* White background to separate sections */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow for separation */
     border-radius: 8px; /* Rounded corners for a modern look */
@@ -109,17 +127,80 @@ html, body {
     justify-content: space-around;
     min-height: 100vh;
     width: 100%;
-    padding: 20px; /* Add padding around the content */
 }
 
 .page section {
     text-align: center;
     width: 100%;
-    margin: 20px 0;
-    padding: 20px; /* Add padding to sections */
-    background-color: #fff; /* White background for sections */
-    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container h1 {
+    color: #FFF212;
+}
+
+#container ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#container li {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #fff;
+}
+
+#container li::before {
+    content: "●";
+    color: #FFF212;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#container .highlight {
+    color: #FFF212;
+}
+
+#container .container2 {
+    margin: 0 auto;
+    background-color: white;
+}
+
+#container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* Ajuste a largura conforme necessário */
+    margin-bottom: 20px;
+}
+
+#container .section {
+    text-align: center;
+    flex: 1;
+    /* Garante que as seções ocupem o mesmo espaço */
+}
+
+#container img {
+    max-width: 20%;
+    /* Permite que as imagens se ajustem ao container */
+    height: auto;
 }
 
 /* Add responsive design */

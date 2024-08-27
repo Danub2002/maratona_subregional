@@ -187,20 +187,50 @@ section div {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    /* Ajuste a largura conforme necessário */
     margin-bottom: 20px;
 }
 
 #container .section {
     text-align: center;
     flex: 1;
-    /* Garante que as seções ocupem o mesmo espaço */
 }
 
 #container img {
     max-width: 20%;
-    /* Permite que as imagens se ajustem ao container */
     height: auto;
+}
+
+.content {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    align-items: center; /* Centraliza o conteúdo */
+    width: 100%;
+}
+
+.realizacao-organizacao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.realizacao-organizacao .section h2{
+    margin-bottom:30px;
+}
+
+.patrocinio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.patrocinadores-logos{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Add responsive design */
@@ -220,5 +250,10 @@ section div {
     .page section {
         margin: 10px 0; /* Reduce margin for smaller screens */
         padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .realizacao-patrocinio {
+        flex-direction: column;
+        align-items: center;
     }
 }
